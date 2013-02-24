@@ -1,0 +1,17 @@
+name: SimpleSpawnLite-Back
+main: me.ellbristow.simplespawnliteback.SimpleSpawnLiteBack
+version: 1.0.0
+database: true
+author: ellbristow
+depend: [SimpleSpawnLite-Core]
+dev-url: http://dev.bukkit.org/server-mods/simplespawnliteback
+description: >
+             Addon for SimpleSpawnLite. Allows the use of /back for all command driven teleportation
+commands:
+  back:
+    description: Teleport back to previous location
+    usage: /back
+    aliases: [sback]
+permissions:
+  simplespawn.back:
+    description: Access to all /back
