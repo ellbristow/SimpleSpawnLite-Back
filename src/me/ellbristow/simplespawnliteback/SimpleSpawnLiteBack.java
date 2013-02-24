@@ -8,7 +8,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -16,7 +15,6 @@ public class SimpleSpawnLiteBack extends JavaPlugin {
 
     private SimpleSpawnLiteBack plugin = this;
     private boolean setHomeWithBeds = false;
-    private FileConfiguration config;
     private SimpleSpawnLiteCore ss;
     private String[] backColumns = {"player", "world", "x", "y", "z", "yaw", "pitch"};
     private String[] backDims = {"TEXT NOT NULL PRIMARY KEY", "TEXT NOT NULL", "DOUBLE NOT NULL DEFAULT 0", "DOUBLE NOT NULL DEFAULT 0", "DOUBLE NOT NULL DEFAULT 0", "FLOAT NOT NULL DEFAULT 0", "FLOAT NOT NULL DEFAULT 0"};
