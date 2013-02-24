@@ -30,7 +30,7 @@ public class SimpleSpawnLiteBack extends JavaPlugin {
         
         Player player = (Player)sender;
         
-        if (commandLabel.equalsIgnoreCase("back")) {
+        if (commandLabel.equalsIgnoreCase("back") || commandLabel.equalsIgnoreCase("sback")) {
             if (!player.hasPermission("simplespawn.back")) {
                 player.sendMessage(ChatColor.RED + "You do not have permission to use that command!");
                 return false;
