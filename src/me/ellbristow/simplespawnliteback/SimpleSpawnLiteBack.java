@@ -93,8 +93,8 @@ public class SimpleSpawnLiteBack extends JavaPlugin {
         
         getServer().getPluginManager().registerEvents(new PlayerListener(plugin), plugin);
         
-        if (!ss.sql.checkTable("PlayerBacks")) {
-            ss.sql.createTable("PlayerBacks", backColumns, backDims);
+        if (!ss.sql.checkTable("BackSpawns")) {
+            ss.sql.createTable("BackSpawns", backColumns, backDims);
         }
         
     }
